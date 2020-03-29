@@ -1,0 +1,33 @@
+.yes {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  left:58%;
+  margin-left: -100px;
+}
+.sidenav {
+  height: 100%;
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #1e2761; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: goldenrod;
+  display: block;
+}
+.sidenav a:hover {
+  color: yellow;
+}
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
