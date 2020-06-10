@@ -3,7 +3,7 @@
   text-align: center;
   width: 200px;
   position: relative;
-  left:57%;
+  left:55%;
   margin-left: -100px;
   color: #daa520;
 }
@@ -47,5 +47,5 @@ body {
   margin-right: auto;
   width: 50%;
   position: absolute;
-  left: 32%;
+  left: 30%;
 }
