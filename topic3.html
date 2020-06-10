@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .accordion {
+        background-color: #1e2761;
+        color: #daa520;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        transition: .4s;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .accordion:hover {
+        background-color:rgb(53, 71, 153);
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: #1e2761;
+        display: none; 
+        overflow: hidden; 
+        color: #daa520;
+      }
+      body {
+  background-color:  rgb(53, 71, 153);
+  }
+  @media (max-width: 768px) {
+  [class*="ok3"] {
+    height: 25%;
+    width: 70%;
+  }
+}
+</style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+  <button class="accordion">Who is Paul Allen?</button>
+  <div class="panel">
+    <p>Paul Allen is an American businessman and he is most known for being the cofounder of Microsoft Corporation. </p></div>
+  <button class="accordion">How he contriubuted to the world of technology</button>
+  <div class="panel">
+    <p>Paul Allen was a main contributor to the world of technology because he cofounded the Microsoft Corporation. The Microsoft Corporation is an American technology company that produces computers and personal items for computers. Microsoft has provided many people across the world to access to technology and allowing them to learn from the Internet.</p></div>
+  <button class="accordion">His accomplishments</button>
+  <div class="panel">
+    <ul>
+      <li>Microsoft Co-founder</li>
+      <li>American investor</li>
+      <li>Philanthropist</li>
+      <li>Twenty-sixth wealthiest man in the world</li>
+      <li>Became a billionare at the age of thirty-one</li>
+      <li>Founded over ten organizations including "Apex Learning", "Allen Institute", and "Allen Institute for Cell Science"</li>
+      </ul>
+      </div>
+  </body>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+<center><img src="allen.JPG" class="ok3"></center>
+<center><button class="button1"><a href="index.html">Home</a></button></center>
+</body>
+</html>

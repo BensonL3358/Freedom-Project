@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .accordion {
+        background-color: #1e2761;
+        color: #daa520;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        transition: .4s;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .accordion:hover {
+        background-color:rgb(53, 71, 153);
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: #1e2761;
+        display: none; 
+        overflow: hidden; 
+        color: #daa520;
+      }
+      body {
+  background-color:  rgb(53, 71, 153);
+  }
+  @media (max-width: 768px) {
+  [class*="ok2"] {
+    height: 25%;
+    width: 70%;
+  }
+}
+</style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+  <button class="accordion">What is a console application?</button>
+  <div class="panel">
+    <p>A console application is a computer program designed with only a text only computer interface. Certain text interfaces include the Graphic User Interface known as a GUI. For example, a text interface with a GUI can be the Win32 console in Microsoft Windows, the Terminal in Mac OS X, and the Xterm in Unix. Console applications were kept in modern programming environments because it makes the learning process of a new programming language easier by removing the graphical user interface. If a console application is being ran by a group of people with an owner, a graphical user interface is not needed making it faster and more manageable to maintain.</p></div>
+  <button class="accordion">Why it can still be used present day</button>
+  <div class="panel">
+    <p>Console applications were used in the past for console programming but as time passed, console applications slowly started being less used. Console applications can still be used in modern day because of it's simplicity. It wouldn't be an overload for a student trying to learn a new coding language. It is a more reasonable step rather than tryinig to learn too many topics at once. Another reason why console applications can be used in the present is because it can provide a much more simple and effective way for a user to get organized. Being more organized allows the user to save a lot of time and effort and can lead to more overall progress.</p></div>
+  </body>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+<center><img src="app.png" class="ok2"></center>
+<center><button class="button1"><a href="index.html">Home</a></button></center>
+</body>
+</html>

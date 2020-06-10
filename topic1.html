@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .accordion {
+        background-color: #1e2761;
+        color: #daa520;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        transition: .4s;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .accordion:hover {
+        background-color:rgb(53, 71, 153);
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: #1e2761;
+        display: none; 
+        overflow: hidden; 
+        color: #daa520;
+      }
+      body {
+  background-color:  rgb(53, 71, 153);
+  }
+  @media (max-width: 480px) {
+  [class*="ok1"] {
+    height: 25%;
+    width: 70%;
+  }
+}
+</style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+  <button class="accordion">20th Century</button>
+  <div class="panel">
+    <p>Console programming has been used throughout history in technology for numerous reasons. A popular one being video games has started in the October of 1958. Physicist William Higinbotham was known for creating the first known video game known as Pong. Pong was a simple tennis game where two players would hit the ball to the other side until someone loses. The video game Pong was very popular in the Brookhaven National Laboratory open house. William Higinbotham thought he could capture more interest from people through something more interactive being demonstrated in front of someone. By 1961, MIT acquired a minicomputer, which had a vector display system. Harvard and MIT employees Martin Graetz, Steve Russell, and Wayne Wiitanen created the second known video game called Spacewar! This video game was inspired by numerous science fiction books that include the Lensman series.</p></div>
+  <button class="accordion">21st Century (Current)</button>
+  <div class="panel">
+    <p>Since technology has advanced throughout time, people have found many innovative ways to use console programming. A form of entertainment that originated from the 20th century has taken over the world and might be familiar to you. Video games are just an example of how console programming is used today. From the programming behind a character than can have multiple abilities to the different graphic displays depending on your output. The ability to interact with the character with varius amounts of inputs makes possibilities endless.  </p></div>
+  <button class="accordion">The Future</button>
+  <div class="panel">
+    <p>In the future, it is certain that society would grow and technology would grow with the society as well. A futuristic way of console programming is even seen today. Robots can be programmed to do varius tasks with the help of artificial intelligence and much more. There are many action films that are futuristic and are possible predictions of the future.</p></div>
+  </body>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+<center><img src="topic1.JPG" class="ok1"></center>
+
+<center><button class="button1"><a href="index.html">Home</a></button></center>
+</body>
+</html>

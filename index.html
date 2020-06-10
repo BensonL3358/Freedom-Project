@@ -5,18 +5,77 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .accordion {
+        background-color: #1e2761;
+        color: #daa520;
+        cursor: pointer;
+        padding: 18px;
+        width: 50%;
+        text-align: center;
+        outline: none;
+        transition: .4s;
+        position: relative;
+        top: 450px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        left: 250px;
+      }
+      .accordion:hover {
+        background-color: rgb(53, 71, 153);
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: #1e2761;
+        display: none; 
+        overflow: hidden; 
+        position: relative;
+        top: 450px;
+        left: 250px;
+        width: 45%;
+        color: #daa520;
+      }
+      @media (max-width: 480px) {
+  [class*="ok"] {
+    height: 25%;
+    width: 70%;
+  }
+}
+</style>
   </head>
   <body>
     <script src="script.js"></script>
     <h1 class="yes"><u>Console Programming</u></h1>
-  </body>
-</html>
-<div class="sidenav">
-  <a href="about.htm">About</a>
+    <center><img src="helloworld.png" class="ok"></center>
+    <button class="accordion">What is Console Programming?</button>
+  <div class="panel">
+    <p>Console Programming is essentially just programming a console. A console is a combination of any input, for example a keyboard, and an output, like a monitor. The output can be programmed with the input to create endless possibilities.</p></div>
+    <button class="accordion">Why Console Programming?</button>
+  <div class="panel">
+    <p>I chose to study Console Programming because it seems that the majority of socitey seem to use technology without wanting to know how it operates or the detail behind it's device.</p></div>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+ <div class="sidenav">
+  <a href="topic1.html">History of Console Programming</a>
   <h1> </h1>
-  <a href="topic1.htm">History of Console Programming</a>
+  <a href="topic2.html">Console Applications</a>
   <h1> </h1>
-  <a href="topic2.htm">Console Applications</a>
+  <a href="topic3.html">Paul Allen</a>
   <h1> </h1>
-  <a href="topic3.htm">Paul Allen</a>
+  <a href="aboutme.html">About Me</a>
+  <h1> </h1>
+  <a href="sources.html">Sources</a>
 </div>
+</body>
+</html>
